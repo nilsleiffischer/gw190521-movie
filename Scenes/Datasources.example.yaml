@@ -1,0 +1,27 @@
+
+# Using NR data from: SXS:BBH:1006
+# Common horizon time: 5064.90080158 (from metadata.txt)
+# Total mass for GW190521: 150M
+
+Replace:
+    Datasources:
+      Skybox: /scratch/example/data/skybox.png
+      Waveform:
+        File: /scratch/example/data/rhOverM_Asymptotic_GeometricUnits_CoM.h5
+        Subfile: Extrapolated_N2.dir
+      SwshCache: /scratch/example/swsh_cache
+      Horizons:
+        PrimaryHorizon: /scratch/example/data/Horizons/AhA.pvd
+        SecondaryHorizon: /scratch/example/data/Horizons/AhB.pvd
+        CommonHorizon: /scratch/example/data/Horizons/AhC.pvd
+      Trajectories:
+        PrimaryHorizonTail:
+          File: /scratch/example/data/Horizons.h5
+          Subfile: AhA.dir
+        SecondaryHorizonTail:
+          File: /scratch/example/data/Horizons.h5
+          Subfile: AhB.dir
+        CommonHorizonTrajectory:
+          File: /scratch/example/data/Horizons.h5
+          Subfile: AhC.dir
+  
