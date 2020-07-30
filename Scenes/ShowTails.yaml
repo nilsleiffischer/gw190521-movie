@@ -1,0 +1,42 @@
+
+Trajectories:
+  - Element: 0
+    Replace:
+      Tail:
+        LineWidth: 2
+        ColorBy: Age
+        Visibility:
+          Start: 0
+          End: 5064
+          FadeOut:
+            TimeMode: Scene
+            Time: 30
+  - Element: 1
+    Replace:
+      Tail:
+        LineWidth: 2
+        ColorBy: Age
+        Visibility:
+          Start: 0
+          End: 5064
+          FadeOut:
+            TimeMode: Scene
+            Time: 30
+
+TransferFunctions:
+  - Append:
+      Field: Age
+      TransferFunction:
+        Custom:
+          Points:
+            - Position: 0
+              Opacity: 0
+            - Position: 0
+              Opacity: 0.6
+            - Position: 60
+              Opacity: 0
+            - Position: 100
+              Opacity: 0
+          Colormap:
+            Name: Grayscale
+            Invert: True

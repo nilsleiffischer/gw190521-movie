@@ -1,0 +1,92 @@
+
+Include:
+  - Datasources
+  - Background/Skybox
+  - Resolutions/High
+  - HigherResolution
+
+Animation:
+  Speed: 8
+  Crop: [4989, 5110]
+
+View:
+  OrientationAxesVisibility: False
+
+WaveformToVolume:
+  Size: 60
+  RadialScale: 5
+  ActivationWidth: 5
+  ClipZNormal: True
+  OneOverRScaling: True
+  Polarizations: ["Plus"]
+
+VolumeRepresentation:
+  ScalarOpacityUnitDistance: 1.
+
+Slices:
+  - Object:
+      Origin: [0., 0., -0.3]
+      Normal: [0., 0., 1.]
+    Representation:
+      Opacity: 0.75
+
+Horizons:
+  - Name: PrimaryHorizon
+    InterpolateTime: True
+    Visibility:
+      Start: 0
+      End: 5067
+  - Name: SecondaryHorizon
+    InterpolateTime: True
+    Visibility:
+      Start: 0
+      End: 5067
+  - Name: CommonHorizon
+    InterpolateTime: True
+    Visibility:
+      Start: 5064.9
+      End: 10000
+      FadeIn:
+        Time: 2.1
+        TimeMode: Scene
+
+Trajectories:
+  - Name: PrimaryHorizonTail
+  - Name: SecondaryHorizonTail
+  - Name: CommonHorizonTrajectory
+
+TransferFunctions:
+  - Field: Plus strain
+    TransferFunction:
+      Peaks:
+        NumPeaks: 10
+        FirstPeak:
+          Position: 5.e-5
+          Opacity: 0.03
+        LastPeak:
+          Position: 8.e-4
+          Opacity: 0.7
+        Logarithmic: True
+        Colormap: Blue Orange (divergent)
+
+CameraShots:
+  - Position: [-10, 26, 12]
+    ViewUp: [0, 0, 1]
+    FocalPoint: [0, 0, 0]
+    ViewAngle: 60
+  - Time: 5045
+    SwingDuration:
+      Time: 32
+      TimeMode: Scene
+    Position: [-2.8, 7, 4.6]
+    ViewUp: [0, 0, 1]
+    FocalPoint: [0, 0, 0]
+    ViewAngle: 60
+  - Time: 5367
+    SwingDuration:
+      Time: 257
+      TimeMode: Scene
+    Position: [-12.3, 32, 14.7]
+    ViewUp: [0, 0, 1]
+    FocalPoint: [0, 0, 0]
+    ViewAngle: 60

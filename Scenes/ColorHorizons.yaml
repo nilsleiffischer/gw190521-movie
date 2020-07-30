@@ -1,0 +1,57 @@
+
+Horizons:
+  - Element: 0
+    Representation:
+      Replace:
+        ColorBy: DimlessRicciScalar
+        Specular: 0        
+  - Element: 1
+    Representation:
+      Replace:
+        ColorBy: DimlessRicciScalar
+        Specular: 0
+  - Element: 2
+    Representation:
+      Replace:
+        ColorBy: RicciScalar
+        Specular: 0
+    Replace:
+      Contours:
+        - Object:
+            ContourBy: RicciScalar
+            Isosurfaces: [0.891, 1.2, 1.5]
+          Representation:
+            AmbientColor: [0.6549019607843137, 0.6549019607843137, 0.6549019607843137]
+            DiffuseColor: [0.6549019607843137, 0.6549019607843137, 0.6549019607843137]
+        - Object:
+            ContourBy: RicciScalar
+            Isosurfaces: [0.7, 0.]
+          Representation:
+            AmbientColor: [0., 0., 0.]
+            DiffuseColor: [0., 0., 0.]
+
+TransferFunctions:
+  - Append:
+      Field: DimlessRicciScalar
+      TransferFunction:
+        Custom:
+          Points:
+            - Position: 0.15
+              Opacity: 1
+            - Position: 0.9
+              Opacity: 1
+          Colormap:
+            Exported: [0.15, 0.8, 0.8, 0.8, 0.18, 0.6, 0.6, 0.6, 0.3, 0.33, 0.33, 0.33, 0.6, 0.25, 0.25, 0.25, 0.75, 0.22, 0.22, 0.22, 0.9, 0.15, 0.15, 0.15]
+            ColorSpace: RGB
+  - Append:
+      Field: RicciScalar
+      TransferFunction:
+        Custom:
+          Points:
+            - Position: -1
+              Opacity: 1
+            - Position: 2.8
+              Opacity: 1
+          Colormap:
+            Exported: [-1.0, 0.7, 0.7, 0.7, 0.28, 0.65, 0.65, 0.65, 0.4, 0.45, 0.45, 0.45, 0.8, 0.3, 0.3, 0.3, 2.8, 0.0, 0.0, 0.0]
+            ColorSpace: RGB

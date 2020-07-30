@@ -1,0 +1,4 @@
+
+WaveformToVolume:
+  Replace:
+    SpatialResolution: 800
