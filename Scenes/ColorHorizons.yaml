@@ -23,12 +23,30 @@ Horizons:
           Representation:
             AmbientColor: [0.6549019607843137, 0.6549019607843137, 0.6549019607843137]
             DiffuseColor: [0.6549019607843137, 0.6549019607843137, 0.6549019607843137]
+          Visibility:
+            Start: 5064.9
+            End: 5118
+            FadeIn:
+              Time: 2.1
+              TimeMode: Scene
+            FadeOut:
+              Time: 8
+              TimeMode: Scene
         - Object:
             ContourBy: RicciScalar
             Isosurfaces: [0.7, 0.]
           Representation:
             AmbientColor: [0., 0., 0.]
             DiffuseColor: [0., 0., 0.]
+          Visibility:
+            Start: 5064.9
+            End: 5118
+            FadeIn:
+              Time: 2.1
+              TimeMode: Scene
+            FadeOut:
+              Time: 8
+              TimeMode: Scene
 
 TransferFunctions:
   - Append:

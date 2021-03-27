@@ -1,0 +1,23 @@
+
+Scenes:
+  - Name: Panorama
+    Composition:
+      - StillsBase
+      - Panorama
+  - Name: Closeup
+    Composition:
+      - StillsBase
+      - Closeup
+  - Name: FaceOn
+    Composition:
+      - StillsBase
+      - FaceOn
+  - Name: FaceOnPanorama
+    Composition:
+      - StillsBase
+      - FaceOnPanorama
+  - Name: Serene
+    Composition:
+      - StillsBase
+      - Panorama
+      - Serene

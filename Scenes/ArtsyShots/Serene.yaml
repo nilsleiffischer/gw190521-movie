@@ -1,0 +1,12 @@
+
+WaveformToVolume:
+  Replace:
+    Size: 100
+    RadialScale: 4
+    ActivationWidth: 10
+
+VolumeRepresentation:
+  Replace:
+    ScalarOpacityUnitDistance: 2.
+
+Delete: Slices

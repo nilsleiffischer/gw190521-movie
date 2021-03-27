@@ -1,8 +1,4 @@
 
-# Using NR data from: SXS:BBH:1006
-# Common horizon time: 5064.90080158 (from metadata.txt)
-# Total mass for GW190521: 150M
-
 Replace:
     Datasources:
       Skybox: /scratch/example/data/skybox.png

@@ -2,19 +2,9 @@
 Base:
   - Base
   - Resolutions/4k
-  - HigherResolution
+  # - HigherResolution
 
 Animation:
   Replace:
-    FrameRate: 1
+    FrameRate: 0.5
     Crop: [4900, 5150]
-
-WaveformToVolume:
-  Replace:
-    Size: 100
-    RadialScale: 4
-    ActivationWidth: 10
-
-VolumeRepresentation:
-  Replace:
-    ScalarOpacityUnitDistance: 2.

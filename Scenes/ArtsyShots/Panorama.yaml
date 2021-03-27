@@ -1,0 +1,7 @@
+
+Replace:
+  CameraShots:
+    - Position: [-10, 26, 12]
+      ViewUp: [0, 0, 1]
+      FocalPoint: [0, 0, 0]
+      ViewAngle: 60
